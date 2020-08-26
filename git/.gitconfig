@@ -1,0 +1,50 @@
+[user]
+	email = laumiulunn@gmail.com
+	name = Andy Lau
+    username = laumiulun
+
+[core]
+    editor = vim
+
+[web]
+    browser = google-chrome
+
+[color]
+    ui = auto
+
+[color "branch"]
+    current = yellow bold
+    local = green bold
+    remote = cyan bold
+
+[diff]
+    tool = vimdiff
+
+[github]
+    username = laumiulun
+
+[alias]
+    a = add --all
+    ai = ai
+    #############
+    b = branch
+    ba = branch -a
+    bd = branch -d
+	#############
+    c = commit
+    ca = commit -a
+    cm = commit -m
+	#############
+    cl = clone
+   	#############
+    d = diff
+    #############
+    f = fetch
+    fo = fetch origin
+    fu = fetch upstream
+	#############
+    ps = push
+    psf = psf
+    psu = psu -u
+    
+
