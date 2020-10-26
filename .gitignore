@@ -36,3 +36,7 @@ Icon?
 Thumbs.db
 
 *.lock
+
+# Private Files and Folder
+######################
+ssh/
