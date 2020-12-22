@@ -56,11 +56,11 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
-#if [ "$color_prompt" = yes ]; then
-#    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
-#else
-#    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
-#fi
+if [ "$color_prompt" = yes ]; then
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+else
+    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+fi
 unset color_prompt force_color_prompt
 
 # If this is an xterm set the title to user@host:dir
@@ -120,9 +120,10 @@ fi
 export MOOSE_JUMP=true
 
 ## Source the MOOSE profile if moose_profile exists:
- if [ -f /opt/moose/environments/moose_profile ]; then
-   . /opt/moose/environments/moose_profile
- fi
+# if [ -f /opt/moose/environments/moose_profile ]; then
+#
+#   . /opt/moose/environments/moose_profile
+# fi
 
 # Git branch in prompt.
 parse_git_branch() {
@@ -197,3 +198,4 @@ unset __conda_setup
 
 
 ## TEST MONGODB
+export PATH=/home/andy/projects/nfml_prototype/mongodb_linux/bin:$PATH

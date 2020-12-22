@@ -106,7 +106,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source "$HOME/.dotfiles/system/.alias"
 source "$HOME/.dotfiles/system/.function"
-
+source "$HOME/.dotfiles/system/.env"
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/andy/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
@@ -125,6 +125,8 @@ unset __conda_setup
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+#alias grep="/usr/bin/grep $GREP_OPTIONS"
+unset GREP_OPTIONS
 
 # End
 #echo "Done with Zshrc"
