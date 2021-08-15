@@ -22,6 +22,7 @@ alias lt='du -sh * | sort -h'
 
 
 # Personal alias
+alias python=python3
 alias drive='cd $HOME/pCloudDrive'
 alias open='xdg-open'
 alias dsh='du -sh'

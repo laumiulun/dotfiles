@@ -120,10 +120,9 @@ fi
 export MOOSE_JUMP=true
 
 ## Source the MOOSE profile if moose_profile exists:
-# if [ -f /opt/moose/environments/moose_profile ]; then
-#
-#   . /opt/moose/environments/moose_profile
-# fi
+if [ -f /opt/moose/environments/moose_profile ]; then
+   . /opt/moose/environments/moose_profile
+fi
 
 # Git branch in prompt.
 parse_git_branch() {
@@ -199,3 +198,4 @@ unset __conda_setup
 
 ## TEST MONGODB
 export PATH=/home/andy/projects/nfml_prototype/mongodb_linux/bin:$PATH
+
