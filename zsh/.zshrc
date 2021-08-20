@@ -17,6 +17,7 @@ export ZSH="/home/andy/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 #ZSH_THEME="agnoster"
 ZSH_THEME="powerlevel10k/powerlevel10k"
+
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -104,9 +105,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-source "$HOME/.dotfiles/system/.alias"
-source "$HOME/.dotfiles/system/.function"
-source "$HOME/.dotfiles/system/.env"
+source "$HOME/dotfiles/system/.alias"
+source "$HOME/dotfiles/system/.function"
+source "$HOME/dotfiles/system/.env"
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/andy/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"

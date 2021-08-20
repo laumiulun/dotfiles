@@ -17,6 +17,9 @@ alias la='ls -A'
 alias l='ls -CF'
 alias lt='ls --human-readable --size -1 -S --classify'
 
+# vi alias
+alias vi=vim
+
 # If Mac 
 alias lt='du -sh * | sort -h'
 
