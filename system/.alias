@@ -16,7 +16,7 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias lt='ls --human-readable --size -1 -S --classify'
-
+alias lh='ls -hl'
 # vi alias
 alias vi=vim
 
